@@ -1,6 +1,7 @@
 package pbiblioteca;
         
 import java.io.IOException;
+import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -29,6 +30,14 @@ public class PBiblioteca extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        
+        /*usuario de administrador*/
+        
+        Admin admin1 = new Admin("Administrador", 001, 31979411, "Admin123");
+        ArrayList <Usuario> usuarios = new ArrayList<>();
+            usuarios.add(admin1);
+            
+            System.out.println(usuarios);
     }
 }
 
