@@ -40,14 +40,17 @@
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="1">
                            <children>
                               <Label text="Contraseña" />
-                              <TextField fx:id="Contrasena" />
+                              <TextField fx:id="Contrasena">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></TextField>
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" spacing="50.0" GridPane.rowIndex="2">
                            <children>
-                              <Button fx:id="Ingresar" minWidth="90.0" mnemonicParsing="false" text="Ingresar" />
-                              <Button fx:id="Registrarse" minWidth="90.0" mnemonicParsing="false" text="Registrarse" />
-                              <Button fx:id="Cerrar" minWidth="90.0" mnemonicParsing="false" text="Cerrar" />
+                              <Button fx:id="Ingresar" minWidth="90.0" mnemonicParsing="false" onAction="#Ingresar" text="Ingresar" />
+                              <Button fx:id="Registrarse" minWidth="90.0" mnemonicParsing="false" onAction="#Registrarse" text="Registrarse" />
+                              <Button fx:id="Cerrar" minWidth="90.0" mnemonicParsing="false" onAction="#Cerrar" text="Cerrar" />
                            </children>
                         </HBox>
                      </children>

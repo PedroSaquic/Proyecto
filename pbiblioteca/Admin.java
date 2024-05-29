@@ -15,11 +15,14 @@ public class Admin extends Usuario{
        super(nombre, id, telefono);  
        this.adminPass = adminPass;
    }
+   
+   
 
     @Override
     public String toString() {
         return "Admin{" + getNombre() + getId() + getTelefono() +"adminPass=" + adminPass + '}';
     }
    
+    
    
 }
