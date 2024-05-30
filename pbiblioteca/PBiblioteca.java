@@ -32,12 +32,18 @@ public class PBiblioteca extends Application {
         launch(args);
         
         /*usuario de administrador*/
-        
         Admin admin1 = new Admin("Administrador", 001, 31979411, "Admin123");
         ArrayList <Usuario> usuarios = new ArrayList<>();
             usuarios.add(admin1);
             
             System.out.println(usuarios);
+            
+        ArrayList <Libro> libros = new ArrayList<>();
+     
+        
+        
+        
+            
     }
 }
 
