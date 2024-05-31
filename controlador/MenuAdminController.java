@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import pbiblioteca.BDatos;
+import pbiblioteca.Cliente;
 import pbiblioteca.Libro;
 import pbiblioteca.PBiblioteca;
 /**
@@ -35,6 +36,21 @@ public class MenuAdminController implements Initializable {
     private TextField Editorial;
     @FXML
     private Button Create;
+    
+    
+    
+    @FXML
+    private TextField NombreC;
+    @FXML
+    private TextField IdC;
+    @FXML
+    private TextField TelefonoC;
+    @FXML
+    private TextField Direccion;
+    @FXML
+    private Label IDCliente;
+    @FXML
+    private Button Create1;
 
 
     /**
@@ -59,12 +75,21 @@ public class MenuAdminController implements Initializable {
       
       BDatos.agregarLibro(libro);
       
-      /*Isb.clear();
+      Isb.clear();
       Titulo.clear();
       Autor.clear();
       AnoPublicacion.clear();
       Editorial.clear();
-      */
     }
+
+
+    @FXML
+    private void Create1(ActionEvent event) {
+        Cliente cliente = new Cliente (NombreC.getText(),Integer.parseInt(IdC.getText()),Integer.parseInt(TelefonoC.getText()),
+                Direccion.getText());
+    }
+    
+    
+    
     
 }

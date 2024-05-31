@@ -69,7 +69,63 @@
                   </AnchorPane>
                </content>
             </Tab>
-          <Tab text="Usuarios" />
+          <Tab text="Usuarios">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <GridPane alignment="CENTER" hgap="25.0" layoutX="35.0" layoutY="78.0" prefHeight="381.0" prefWidth="343.0" vgap="25.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" text="Nombre">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Id" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Telefono" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Direccion" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="IDCliente" GridPane.rowIndex="4">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="NombreC" GridPane.columnIndex="1" />
+                              <TextField fx:id="IdC" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="TelefonoC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="Direccion" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label fx:id="IDCliente" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="35.0" layoutY="27.0" prefHeight="45.0" prefWidth="191.0" text="Informacion usuarios" />
+                        <Button fx:id="Create1" layoutX="161.0" layoutY="479.0" mnemonicParsing="false" onAction="#Create1" text="Agregar" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
             <Tab text="Prestamos" />
         </tabs>
       </TabPane>

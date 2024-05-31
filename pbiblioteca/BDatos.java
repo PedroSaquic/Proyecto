@@ -14,7 +14,9 @@ public class BDatos {
     public static ArrayList<Libro> BLibros = new ArrayList<>();
     
     public static void agregarLibro(Libro libro){
-           BLibros.add(libro);
-        
+           BLibros.add(libro); 
+    }
+    public static void EliminarLibro(Libro libro){
+           BLibros.remove(libro); 
     }
 }
