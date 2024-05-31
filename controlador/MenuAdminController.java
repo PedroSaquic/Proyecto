@@ -13,7 +13,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import pbiblioteca.BDatos;
 import pbiblioteca.Libro;
+import pbiblioteca.PBiblioteca;
 /**
  * FXML Controller class
  *
@@ -55,13 +57,14 @@ public class MenuAdminController implements Initializable {
       Libro libro = new Libro (Isb.getText(), Titulo.getText(), Autor.getText(),
                               Integer.parseInt(AnoPublicacion.getText()), Editorial.getText());
       
+      BDatos.agregarLibro(libro);
       
-      Isb.clear();
+      /*Isb.clear();
       Titulo.clear();
       Autor.clear();
       AnoPublicacion.clear();
       Editorial.clear();
-      
+      */
     }
     
 }

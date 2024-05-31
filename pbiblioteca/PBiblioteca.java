@@ -36,14 +36,15 @@ public class PBiblioteca extends Application {
         ArrayList <Usuario> usuarios = new ArrayList<>();
             usuarios.add(admin1);
             
-            System.out.println(usuarios);
+            System.out.println(usuarios);  
+       
             
-        ArrayList <Libro> libros = new ArrayList<>();
-     
-        
-        
-        
-            
-    }
+       ArrayList<Libro> libros = BDatos.BLibros;
+       
+        for (int i = 0; i < libros.size(); i++) {
+            Libro libro = libros.get(i);
+            System.out.println("Posición " + (i + 1) + ": " + libro);
+        }           
+    } 
 }
 
