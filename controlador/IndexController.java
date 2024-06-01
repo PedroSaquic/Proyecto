@@ -46,6 +46,7 @@ public class IndexController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
     }  
 
+
     @FXML
     private void Cerrar(ActionEvent event) { 
         
@@ -98,9 +99,8 @@ public class IndexController implements Initializable {
             
             stage.setScene(scene);
             stage.show();
-            
             stage.setOnCloseRequest (e -> controlador.closeWindows());
-            
+
             Stage myStage = (Stage) this.Registrarse.getScene().getWindow();
             myStage.close();
             

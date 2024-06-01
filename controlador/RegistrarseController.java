@@ -126,6 +126,22 @@ public class RegistrarseController implements Initializable {
 
     @FXML
     private void Back(ActionEvent event) {
+        try {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/Index.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+
+        Stage ventanaActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.initOwner(ventanaActual);
+
+        stage.setScene(scene);
+        stage.show();
+
+    } catch (IOException ex) {
+        Logger.getLogger(IndexController.class.getName()).log(Level.SEVERE, null, ex);
+    }
     }
 
     @FXML
