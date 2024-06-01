@@ -19,7 +19,6 @@ public class BDatos {
         
            BLibros.add(libro); 
            JOptionPane.showMessageDialog(null, "Nuevo Libro " + libro.getTitulo());
-           
     }
     
     public static void EliminarLibro(Libro libro){

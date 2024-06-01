@@ -19,6 +19,7 @@ import javax.swing.JOptionPane;
 import pbiblioteca.BDatos;
 import pbiblioteca.Cliente;
 import pbiblioteca.Libro;
+import pbiblioteca.LibroBD;
 import pbiblioteca.PBiblioteca;
 
 /**
@@ -83,7 +84,9 @@ public class MenuAdminController implements Initializable {
                Libro libro = new Libro(Isb.getText(), Titulo.getText(), 
                        Autor.getText(), año2, Editorial.getText());
                 BDatos.agregarLibro(libro);
-                
+                LibroBD librobd = new LibroBD();
+           
+           librobd.create(libro);
                 Isb.clear();
                 Titulo.clear();
                 Autor.clear();
