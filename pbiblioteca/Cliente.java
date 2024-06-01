@@ -10,10 +10,20 @@ package pbiblioteca;
  */
 public class Cliente extends Usuario{
     private String direccion;
+    private String contrasena;
 
-    public Cliente(String nombre, int id, int telefono, String direccion) {
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    public Cliente(String nombre, int id, int telefono, String direccion, String contrasena) {
         super(nombre, id, telefono);
         this.direccion = direccion;
+        this.contrasena = contrasena;
     }
 
     public String getDireccion() {
@@ -29,7 +39,8 @@ public class Cliente extends Usuario{
         return "\nCliente: " + getNombre() 
                 + "\nId Cliente: " + getId() 
                 + "\nTelefono: " + getTelefono() 
-                + "\ndireccion: " + direccion + "\n";
+                + "\ndireccion: " + direccion 
+                + "\ncontrasena: " + contrasena + "\n";
     }
     
 }

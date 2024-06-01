@@ -55,6 +55,8 @@ public class MenuAdminController implements Initializable {
     private Button Create1;
     @FXML
     private Label idcliente;
+    @FXML
+    private TextField contrasena;
 
     /**
      * Initializes the controller class.
@@ -115,7 +117,7 @@ public class MenuAdminController implements Initializable {
                 int Tel2 = Integer.parseInt(Tel);
             if (IDc2 >= 0 || Tel2 >= 0){    
         Cliente cliente = new Cliente(NombreC.getText(), Integer.parseInt(IdC.getText()), 
-                Integer.parseInt(TelefonoC.getText()),Direccion.getText());
+                Integer.parseInt(TelefonoC.getText()),Direccion.getText(),contrasena.getText());
         
         idcliente.setText(String.valueOf(BDatos.BClientes.size()) + " IDcliente");
         
@@ -124,6 +126,7 @@ public class MenuAdminController implements Initializable {
                    IdC.clear();
                    TelefonoC.clear();
                    Direccion.clear();
+                   contrasena.clear();
             }else{
                 Alert alert = new Alert(AlertType.WARNING);
                 alert.setTitle("Alerta");

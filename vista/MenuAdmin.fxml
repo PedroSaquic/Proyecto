@@ -98,7 +98,7 @@
                                     <Insets left="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="IDCliente" GridPane.rowIndex="4">
+                              <Label text="IDCliente" GridPane.rowIndex="5">
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding>
@@ -107,14 +107,17 @@
                               <TextField fx:id="IdC" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <TextField fx:id="TelefonoC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                               <TextField fx:id="Direccion" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                              <Label fx:id="IDCliente" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <Label fx:id="idcliente" alignment="CENTER" prefHeight="21.0" prefWidth="86.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="IDCliente" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label fx:id="idcliente" alignment="CENTER" prefHeight="21.0" prefWidth="86.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label text="Contraseña" GridPane.rowIndex="4" />
+                              <PasswordField fx:id="contrasena" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                            </children>
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                            </columnConstraints>
                            <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
