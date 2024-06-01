@@ -20,7 +20,9 @@ public class Admin extends Usuario{
 
     @Override
     public String toString() {
-        return "Admin{" + getNombre() + getId() + getTelefono() +"adminPass=" + adminPass + '}';
+        return  "\nAdministrador: " + getNombre() 
+                + "\nId: " + getId() + getTelefono() 
+                +"\nadminPass: " + adminPass + "\n";
     }
    
     

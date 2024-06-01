@@ -35,7 +35,6 @@ public class PBiblioteca extends Application {
         Admin admin1 = new Admin("Administrador", 001, 31979411, "Admin123");
         ArrayList <Usuario> usuarios = new ArrayList<>();
             usuarios.add(admin1);
-            
             System.out.println(usuarios);  
        
             
@@ -43,8 +42,16 @@ public class PBiblioteca extends Application {
        
         for (int i = 0; i < libros.size(); i++) {
             Libro libro = libros.get(i);
-            System.out.println("Posición " + (i + 1) + ": " + libro);
-        }           
+            System.out.println("LibroID " + (i + 1) + ": " + libro);
+        }
+        
+        ArrayList<Cliente> clientes = BDatos.BClientes;
+        
+        for (int i = 0; i < clientes.size(); i++) {
+            Cliente cliente = clientes.get(i);
+            System.out.println("Cliente ID " + (i + 1) + ": " + cliente);
+        }
+        
     } 
 }
 

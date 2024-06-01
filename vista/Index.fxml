@@ -24,7 +24,7 @@
                               <Insets right="20.0" />
                            </padding>
                         </Label>
-                        <TextField fx:id="Usuario" />
+                        <TextField fx:id="Usuario" text="Administrador" />
                      </children>
                      <opaqueInsets>
                         <Insets />
@@ -33,7 +33,7 @@
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="1">
                      <children>
                         <Label text="Contraseña" />
-                        <PasswordField fx:id="Contrasena" />
+                        <PasswordField fx:id="Contrasena" text="Admin123" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" spacing="50.0" GridPane.rowIndex="2">

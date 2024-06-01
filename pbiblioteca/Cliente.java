@@ -11,7 +11,7 @@ package pbiblioteca;
 public class Cliente extends Usuario{
     private String direccion;
 
-    public Cliente(String nombre, int id, int telefono) {
+    public Cliente(String nombre, int id, int telefono, String direccion) {
         super(nombre, id, telefono);
         this.direccion = direccion;
     }
@@ -26,7 +26,10 @@ public class Cliente extends Usuario{
 
     @Override
     public String toString() {
-        return "Cliente{"+ getNombre() + getId() + getTelefono() + "direccion=" + direccion + '}';
+        return "\nCliente: " + getNombre() 
+                + "\nId Cliente: " + getId() 
+                + "\nTelefono: " + getTelefono() 
+                + "\ndireccion: " + direccion + "\n";
     }
     
 }
